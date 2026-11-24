@@ -1,0 +1,83 @@
+node=julia job=37572 out=results/pool8htop_37572 n=600000000 assets=50 workers=8
+Tue Nov 24 16:43:01 CET 2026
+pid 1687456's current affinity list: 5-8,261-264
+waiting 30 s so htop can be attached
+Tue Nov 24 16:43:31 CET 2026
+pool started pid=1687620
+=== top snapshot at about 10 s
+top - 16:43:42 up 47 days, 20:01,  0 users,  load average: 2.47, 1.70, 1.90
+Tasks: 4534 total,   9 running, 4525 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.5 us,  0.3 sy,  0.0 ni, 98.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem : 515002.2 total,  45800.9 free,  22364.9 used, 446836.3 buff/cache
+MiB Swap:   8192.0 total,   7153.6 free,   1038.4 used. 484127.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+1687628 pc63      20   0  402276  55904   8728 R 100.0   0.0   0:10.07 python
+1687629 pc63      20   0  402276  33468   8812 R 100.0   0.0   0:10.14 python
+1687624 pc63      20   0  402276  58032   8812 R 100.0   0.0   0:10.14 python
+1687625 pc63      20   0  402276  45744   8812 R 100.0   0.0   0:10.14 python
+1687627 pc63      20   0  480404 115988   8812 R 100.0   0.0   0:10.15 python
+1687623 pc63      20   0  402276  30972   8812 R  96.4   0.0   0:09.99 python
+1687626 pc63      20   0  441340 108268   8720 R  96.4   0.0   0:10.09 python
+1687630 pc63      20   0  441340 108372   8812 R  75.0   0.0   0:10.03 python
+1687663 pc63      20   0   20960   8536   2880 R  25.0   0.0   0:00.13 top
+1687622 pc63      20   0 1243532 799268  20704 S   7.1   0.2   0:00.90 python
+1687456 pc63      20   0    7584   3508   3148 S   0.0   0.0   0:00.00 slurm_script
+1687603 pc63      20   0   21068   8692   2908 S   0.0   0.0   0:00.42 top
+1687620 pc63      20   0    2580   1544   1432 S   0.0   0.0   0:00.00 time
+1687664 pc63      20   0    5436   1708   1596 S   0.0   0.0   0:00.00 head
+=== top snapshot at about 25 s
+top - 16:43:57 up 47 days, 20:01,  0 users,  load average: 3.92, 2.06, 2.01
+Tasks: 4535 total,   9 running, 4526 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.5 us,  0.3 sy,  0.0 ni, 98.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem : 515002.2 total,  44399.7 free,  23424.0 used, 447178.5 buff/cache
+MiB Swap:   8192.0 total,   7153.6 free,   1038.4 used. 483068.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+1687627 pc63      20   0  441340 108364   8812 R 100.0   0.0   0:25.33 python
+1687626 pc63      20   0  402276  35412   8720 R 100.0   0.0   0:25.22 python
+1687629 pc63      20   0  402276  45756   8812 R 100.0   0.0   0:25.42 python
+1687630 pc63      20   0  402276  49852   8812 R 100.0   0.0   0:25.16 python
+1687625 pc63      20   0  402276  64176   8812 R  96.4   0.0   0:25.41 python
+1687628 pc63      20   0  441340 108288   8728 R  96.4   0.0   0:25.24 python
+1687623 pc63      20   0  441340 108364   8812 R  92.9   0.0   0:25.24 python
+1687624 pc63      20   0  402276  58032   8812 R  85.7   0.0   0:25.36 python
+1687720 pc63      20   0   20964   8540   2880 R  25.0   0.0   0:00.13 top
+1687622 pc63      20   0 2357644   1.8g  20704 S   7.1   0.4   0:02.04 python
+1687456 pc63      20   0    7584   3508   3148 S   0.0   0.0   0:00.00 slurm_script
+1687603 pc63      20   0   21068   8692   2908 S   0.0   0.0   0:00.76 top
+1687620 pc63      20   0    2580   1544   1432 S   0.0   0.0   0:00.00 time
+1687721 pc63      20   0    5436   1784   1664 S   0.0   0.0   0:00.00 head
+=== top snapshot at about 40 s
+top - 16:44:13 up 47 days, 20:02,  0 users,  load average: 5.19, 2.43, 2.14
+Tasks: 4536 total,   9 running, 4527 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.5 us,  0.3 sy,  0.0 ni, 98.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem : 515002.2 total,  43035.8 free,  24449.5 used, 447517.0 buff/cache
+MiB Swap:   8192.0 total,   7153.6 free,   1038.4 used. 482043.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+1687624 pc63      20   0  402276  68272   8812 R 100.0   0.0   0:40.59 python
+1687625 pc63      20   0  402276  43696   8812 R 100.0   0.0   0:40.62 python
+1687627 pc63      20   0  402276  43700   8812 R 100.0   0.0   0:40.43 python
+1687630 pc63      20   0  402276  51900   8812 R 100.0   0.0   0:40.31 python
+1687628 pc63      20   0  441340  86936   8728 R  96.2   0.0   0:40.47 python
+1687629 pc63      20   0  402276  55996   8812 R  96.2   0.0   0:40.61 python
+1687626 pc63      20   0  402276  66132   8720 R  88.5   0.0   0:40.43 python
+1687623 pc63      20   0  364772  31080   8812 R  76.9   0.0   0:40.33 python
+1687767 pc63      20   0   20964   8536   2876 R  23.1   0.0   0:00.12 top
+1687622 pc63      20   0 3537292   2.9g  20704 S   3.8   0.6   0:03.17 python
+1687456 pc63      20   0    7584   3508   3148 S   0.0   0.0   0:00.00 slurm_script
+1687603 pc63      20   0   21068   8692   2908 S   0.0   0.0   0:01.11 top
+1687620 pc63      20   0    2580   1544   1432 S   0.0   0.0   0:00.00 time
+1687768 pc63      20   0    5436   1780   1668 S   0.0   0.0   0:00.00 head
+pool     workers=8   n=600,000,000 assets=50 (synthetic)  VaR=27,336.20  ES=31,339.11  sim=64.23s  quantile=1.72s  total=65.98s
+pool exit=0
+	User time (seconds): 461.58
+	System time (seconds): 51.45
+	Percent of CPU this job got: 774%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:06.24
+	Maximum resident set size (kbytes): 14105812
+version,workers,n_scenarios,n_assets,batch_size,rep,method,t_setup,t_simulate,t_quantile,t_total,var,es,node,job_id,load1,date
+pool,8,600000000,50,100000,1,partition,0.0303,64.2262,1.7194,65.9760,27336.195799519337,31339.111139780136,julia,37572,6.05615234375,2026-11-24T16:44:38
+Tue Nov 24 16:44:38 CET 2026
+done ok

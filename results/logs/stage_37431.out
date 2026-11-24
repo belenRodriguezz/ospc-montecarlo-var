@@ -1,0 +1,24 @@
+node=julia job=37431
+Tue Nov 24 11:02:30 CET 2026
+ 11:02:30 up 47 days, 14:20,  0 users,  load average: 346.16, 348.09, 350.76
+=== rep 1
+source=synthetic batches=100 scenarios=10,000,000 numpy=2.5.4
+rng+standard_normal   3.955 s  80.1%
+mu + z @ chol.T       0.883 s  17.9%
+returns @ w           0.100 s   2.0%
+total                 4.938 s (49.4 ms/batch)
+=== rep 2
+source=synthetic batches=100 scenarios=10,000,000 numpy=2.5.4
+rng+standard_normal   3.649 s  78.7%
+mu + z @ chol.T       0.887 s  19.1%
+returns @ w           0.100 s   2.1%
+total                 4.635 s (46.4 ms/batch)
+=== rep 3
+source=synthetic batches=100 scenarios=10,000,000 numpy=2.5.4
+rng+standard_normal   3.741 s  79.2%
+mu + z @ chol.T       0.881 s  18.7%
+returns @ w           0.100 s   2.1%
+total                 4.722 s (47.2 ms/batch)
+Tue Nov 24 11:02:45 CET 2026
+ 11:02:45 up 47 days, 14:20,  0 users,  load average: 345.96, 347.96, 350.68
+done ok

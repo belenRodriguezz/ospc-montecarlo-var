@@ -1,0 +1,47 @@
+node=julia job=37427 out=results/prof_37427
+Tue Nov 24 10:55:30 CET 2026
+ 10:55:30 up 47 days, 14:13,  0 users,  load average: 341.92, 345.35, 351.83
+serial   workers=1   n=100,000,000 assets=40 (synthetic)  VaR=27,153.82  ES=31,128.82  sim=45.80s  quantile=0.32s  total=46.14s
+Tue Nov 24 10:56:16 2026    results/prof_37427/prof_serial_100M.prof
+
+         134010 function calls (131419 primitive calls) in 46.418 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1203 to 12 due to restriction <12>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    136/1    0.000    0.000   46.418   46.418 {built-in method builtins.exec}
+        1    0.037    0.037   46.418   46.418 run.py:1(<module>)
+        1    0.075    0.075   46.138   46.138 run.py:71(main)
+        1    0.005    0.005   45.798   45.798 run.py:34(run_serial)
+     1000   45.753    0.046   45.793    0.046 /home/pc63/ospc-montecarlo-var/mcvar/common.py:66(simulate_batch)
+    183/8    0.001    0.000    0.254    0.032 <frozen importlib._bootstrap>:1349(_find_and_load)
+    183/8    0.000    0.000    0.254    0.032 <frozen importlib._bootstrap>:1304(_find_and_load_unlocked)
+        1    0.000    0.000    0.246    0.246 /home/pc63/ospc-montecarlo-var/mcvar/common.py:79(var_es)
+        1    0.000    0.000    0.245    0.245 /data/software/envs/ospc/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:732(partition)
+   438/18    0.000    0.000    0.235    0.013 <frozen importlib._bootstrap>:480(_call_with_frames_removed)
+   400/11    0.000    0.000    0.210    0.019 {built-in method builtins.__import__}
+   171/10    0.000    0.000    0.157    0.016 <frozen importlib._bootstrap>:911(_load_unlocked)
+
+
+Tue Nov 24 10:56:16 2026    results/prof_37427/prof_serial_100M.prof
+
+         134010 function calls (131419 primitive calls) in 46.418 seconds
+
+   Ordered by: internal time
+   List reduced from 1203 to 8 due to restriction <8>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     1000   45.753    0.046   45.793    0.046 /home/pc63/ospc-montecarlo-var/mcvar/common.py:66(simulate_batch)
+        1    0.140    0.140    0.140    0.140 {method 'partition' of 'numpy.ndarray' objects}
+      743    0.110    0.000    0.110    0.000 {built-in method posix.stat}
+        1    0.106    0.106    0.106    0.106 {method 'copy' of 'numpy.ndarray' objects}
+        1    0.075    0.075   46.138   46.138 run.py:71(main)
+        1    0.037    0.037   46.418   46.418 run.py:1(<module>)
+      218    0.031    0.000    0.031    0.000 {built-in method _io.open_code}
+     1002    0.030    0.000    0.034    0.000 /data/software/envs/ospc/lib/python3.12/site-packages/numpy/_core/_ufunc_config.py:496(inner)
+
+
+Tue Nov 24 10:56:17 CET 2026
+ 10:56:17 up 47 days, 14:14,  0 users,  load average: 343.53, 345.25, 351.49
+done ok

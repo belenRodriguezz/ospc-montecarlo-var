@@ -1,0 +1,2 @@
+version,workers,n_scenarios,n_assets,batch_size,rep,method,t_setup,t_simulate,t_quantile,t_total,var,es,node,job_id,load1,date
+serial,1,10000000,40,100000,1,partition,0.0132,4.6316,0.0211,4.6659,27162.16391649171,31144.202015383802,julia,37445,364.05517578125,2026-11-24T12:05:05

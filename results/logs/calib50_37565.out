@@ -1,0 +1,33 @@
+node=julia job=37565 out=results/calib50_37565 assets=50
+Tue Nov 24 16:20:31 CET 2026
+ 16:20:31 up 47 days, 19:38,  0 users,  load average: 2.02, 2.27, 2.42
+1
+pid 1680701's current affinity list: 5,261
+   NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=1,mem=16G,node=1,billing=1
+   AllocTRES=cpu=2,mem=16G,node=1,billing=2
+   MinCPUsNode=1 MinMemoryNode=16G MinTmpDiskNode=0
+Model name:                              AMD EPYC 9745 128-Core Processor
+Thread(s) per core:                      2
+Core(s) per socket:                      128
+Socket(s):                               2
+=== N=100000000 assets=50
+serial   workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=62.96s  quantile=0.22s  total=63.24s
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:04.48
+	Maximum resident set size (kbytes): 2382360
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1395412
+=== N=200000000 assets=50
+serial   workers=1   n=200,000,000 assets=50 (synthetic)  VaR=27,339.70  ES=31,342.69  sim=126.31s  quantile=0.43s  total=126.75s
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:06.92
+	Maximum resident set size (kbytes): 4724620
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3681935
+version,workers,n_scenarios,n_assets,batch_size,rep,method,t_setup,t_simulate,t_quantile,t_total,var,es,node,job_id,load1,date
+serial,1,100000000,50,100000,1,partition,0.0564,62.9596,0.2235,63.2395,27343.001159954078,31346.277386003487,julia,37565,2.59033203125,2026-11-24T16:21:36
+serial,1,200000000,50,100000,1,partition,0.0146,126.3051,0.4255,126.7452,27339.704035618448,31342.688653211193,julia,37565,2.74951171875,2026-11-24T16:23:43
+Tue Nov 24 16:23:43 CET 2026
+ 16:23:43 up 47 days, 19:41,  0 users,  load average: 2.75, 2.53, 2.49
+done ok
