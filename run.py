@@ -64,8 +64,27 @@ def run_pool(batches, mu, chol, w, workers):
         # chunksize=1: batches are already large units of work
         return list(ex.map(_pool_task, batches, chunksize=1))
 
+# Ray: tasks run in worker processes started by Ray. The shared inputs go into
+# Ray's object store ONCE; every task receives a reference, not a copy.
+def run_ray(batches, mu, chol, w, workers):
+    import ray  # imported here so the other versions work without Ray installed
 
-VERSIONS = {"serial": run_serial, "threads": run_threads, "pool": run_pool}
+    @ray.remote
+    def ray_task(seed_seq, size, mu_ref, chol_ref, w_ref):
+        return simulate_batch(seed_seq, size, mu_ref, chol_ref, w_ref)
+
+    ray.init(num_cpus=workers, include_dashboard=False, logging_level="ERROR")
+    try:
+        mu_ref, chol_ref, w_ref = ray.put(mu), ray.put(chol), ray.put(w)
+        futures = [ray_task.remote(s, n, mu_ref, chol_ref, w_ref)
+                   for s, n in batches]
+        return ray.get(futures)  # submission order = batch order
+    finally:
+        ray.shutdown()
+        
+VERSIONS = {"serial": run_serial, "threads": run_threads, "pool": run_pool,
+            "ray": run_ray}
+
 
 
 def main():
