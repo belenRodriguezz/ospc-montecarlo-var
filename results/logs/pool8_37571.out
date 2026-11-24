@@ -1,0 +1,26 @@
+node=julia job=37571 out=results/pool8_37571 n=100000000 assets=50 workers=8
+Tue Nov 24 16:34:01 CET 2026
+ 16:34:01 up 47 days, 19:51,  0 users,  load average: 1.61, 1.84, 2.14
+pid 1685121's current affinity list: 5-8,261-264
+   NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:*
+   AllocTRES=cpu=8,mem=16G,node=1,billing=8
+pool     workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=10.94s  quantile=0.22s  total=11.17s
+    PID    PPID STAT PSR %CPU   RSS COMMAND
+	User time (seconds): 78.02
+	System time (seconds): 9.16
+	Percent of CPU this job got: 769%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:11.33
+	Maximum resident set size (kbytes): 2370768
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1963136
+	Voluntary context switches: 19705
+	Involuntary context switches: 15954
+version,workers,n_scenarios,n_assets,batch_size,rep,method,t_setup,t_simulate,t_quantile,t_total,var,es,node,job_id,load1,date
+pool,8,100000000,50,100000,1,partition,0.0131,10.9365,0.2245,11.1741,27343.001159954078,31346.277386003487,julia,37571,2.984375,2026-11-24T16:34:13
+Tue Nov 24 16:34:14 CET 2026
+ 16:34:14 up 47 days, 19:52,  0 users,  load average: 2.98, 2.13, 2.23
+JobID           Elapsed   TotalCPU     MaxRSS        NodeList 
+------------ ---------- ---------- ---------- --------------- 
+37571          00:00:33   00:00:00                      julia 
+37571.batch    00:00:33   00:00:00                      julia 
+done ok
