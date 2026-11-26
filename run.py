@@ -73,7 +73,9 @@ def run_ray(batches, mu, chol, w, workers):
     def ray_task(seed_seq, size, mu_ref, chol_ref, w_ref):
         return simulate_batch(seed_seq, size, mu_ref, chol_ref, w_ref)
 
-    ray.init(num_cpus=workers, include_dashboard=False, logging_level="ERROR")
+    with Timer() as t_init: ray.init(num_cpus=workers, include_dashboard=False, logging_level="ERROR")
+    print(f"ray_init={t_init.elapsed:.3f}s")
+
     try:
         mu_ref, chol_ref, w_ref = ray.put(mu), ray.put(chol), ray.put(w)
         futures = [ray_task.remote(s, n, mu_ref, chol_ref, w_ref)
