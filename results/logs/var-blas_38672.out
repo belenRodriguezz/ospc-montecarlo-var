@@ -1,0 +1,62 @@
+node=fortran job=38672 cpus=64 N=100000000 assets=50
+30.81 38.45 38.22 29/5471 1683274
+[{'user_api': 'blas', 'internal_api': 'openblas', 'num_threads': 1, 'prefix': 'libopenblas', 'filepath': '/data/software/envs/ospc/lib/libopenblasp-r0.3.34.so', 'version': '0.3.34', 'threading_layer': 'pthreads', 'architecture': 'Cooperlake'}]
+serial   workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=59.06s  quantile=0.21s  total=59.28s
+blas     workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=60.51s  quantile=0.22s  total=60.74s
+blas     workers=2   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=55.60s  quantile=0.30s  total=55.91s
+blas     workers=4   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=52.93s  quantile=0.24s  total=53.18s
+blas     workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=50.85s  quantile=0.23s  total=51.09s
+blas     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=51.29s  quantile=0.24s  total=51.54s
+blas     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=50.99s  quantile=0.23s  total=51.23s
+blas     workers=64  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=62.67s  quantile=0.22s  total=62.90s
+blas     workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=59.81s  quantile=0.19s  total=60.01s
+blas     workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=50.39s  quantile=0.22s  total=50.62s
+blas     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=49.89s  quantile=0.21s  total=50.11s
+serial   workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=59.42s  quantile=0.22s  total=59.65s
+blas     workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=59.97s  quantile=0.21s  total=60.20s
+blas     workers=2   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=55.92s  quantile=0.29s  total=56.22s
+blas     workers=4   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=52.49s  quantile=0.23s  total=52.72s
+blas     workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=51.19s  quantile=0.23s  total=51.42s
+blas     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=51.14s  quantile=0.23s  total=51.38s
+blas     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=51.23s  quantile=0.24s  total=51.49s
+blas     workers=64  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=57.99s  quantile=0.28s  total=58.27s
+blas     workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=62.22s  quantile=0.22s  total=62.44s
+blas     workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=51.94s  quantile=0.23s  total=52.18s
+blas     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=53.42s  quantile=0.23s  total=53.66s
+serial   workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=61.77s  quantile=0.24s  total=62.02s
+blas     workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=61.63s  quantile=0.24s  total=61.88s
+blas     workers=2   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=56.77s  quantile=0.34s  total=57.12s
+blas     workers=4   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=52.85s  quantile=0.24s  total=53.10s
+blas     workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=52.49s  quantile=0.25s  total=52.75s
+blas     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=51.90s  quantile=0.25s  total=52.15s
+blas     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=62.86s  quantile=0.25s  total=63.13s
+blas     workers=64  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=62.59s  quantile=0.25s  total=62.85s
+blas     workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=61.95s  quantile=0.22s  total=62.18s
+blas     workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=51.50s  quantile=0.24s  total=51.74s
+blas     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=51.03s  quantile=0.24s  total=51.27s
+serial   workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=61.92s  quantile=0.24s  total=62.16s
+blas     workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=61.45s  quantile=0.25s  total=61.71s
+blas     workers=2   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=56.99s  quantile=0.33s  total=57.33s
+blas     workers=4   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=52.57s  quantile=0.83s  total=53.40s
+blas     workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=51.65s  quantile=0.27s  total=51.93s
+blas     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=51.55s  quantile=2.83s  total=54.39s
+blas     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=63.68s  quantile=1.16s  total=64.85s
+blas     workers=64  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=64.41s  quantile=0.45s  total=64.86s
+blas     workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=61.75s  quantile=0.21s  total=61.97s
+blas     workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=51.77s  quantile=0.23s  total=52.01s
+blas     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=54.36s  quantile=0.27s  total=54.64s
+serial   workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=61.96s  quantile=0.24s  total=62.22s
+blas     workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=62.24s  quantile=0.25s  total=62.50s
+blas     workers=2   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=57.07s  quantile=0.34s  total=57.41s
+blas     workers=4   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=53.85s  quantile=0.25s  total=54.11s
+blas     workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=52.41s  quantile=0.24s  total=52.66s
+blas     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=51.46s  quantile=0.26s  total=51.73s
+blas     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=61.69s  quantile=0.26s  total=61.96s
+blas     workers=64  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=63.22s  quantile=0.26s  total=63.49s
+blas     workers=1   n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=61.53s  quantile=0.21s  total=61.75s
+blas     workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=51.93s  quantile=0.23s  total=52.17s
+blas     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,339.45  ES=31,342.65  sim=50.87s  quantile=0.24s  total=51.12s
+JobID           Elapsed   TotalCPU     MaxRSS        NodeList 
+------------ ---------- ---------- ---------- --------------- 
+38672          00:52:06   00:00:00                    fortran 
+38672.batch    00:52:06   00:00:00                    fortran 

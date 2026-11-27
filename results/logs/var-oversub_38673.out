@@ -1,0 +1,36 @@
+node=fortran job=38673 cpus=64 N=100000000 assets=50
+57.44 65.83 63.50 43/5819 1701420
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.56s  quantile=0.24s  total=5.81s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.29s  quantile=0.28s  total=3.57s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.51s  quantile=0.23s  total=5.74s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.41s  quantile=0.28s  total=3.70s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=4.88s  quantile=0.23s  total=5.12s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.26s  quantile=0.25s  total=5.51s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.50s  quantile=0.23s  total=5.74s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.43s  quantile=0.27s  total=3.71s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=4.78s  quantile=0.25s  total=5.04s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.39s  quantile=0.27s  total=3.67s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=4.89s  quantile=0.24s  total=5.14s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.30s  quantile=0.23s  total=5.53s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=6.40s  quantile=0.27s  total=6.68s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.51s  quantile=0.28s  total=3.80s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.26s  quantile=0.23s  total=5.50s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.31s  quantile=0.29s  total=3.61s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=4.90s  quantile=0.23s  total=5.15s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.33s  quantile=0.25s  total=5.59s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=6.16s  quantile=0.24s  total=6.41s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.33s  quantile=0.26s  total=3.59s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.04s  quantile=0.24s  total=5.28s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.40s  quantile=0.27s  total=3.68s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=4.97s  quantile=0.23s  total=5.21s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.44s  quantile=0.23s  total=5.68s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.82s  quantile=0.24s  total=6.06s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.30s  quantile=0.27s  total=3.58s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.14s  quantile=0.25s  total=5.39s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.38s  quantile=0.30s  total=3.69s
+pool     workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.16s  quantile=0.24s  total=5.41s
+pool     workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=5.33s  quantile=0.24s  total=5.58s
+JobID           Elapsed   TotalCPU     MaxRSS        NodeList 
+------------ ---------- ---------- ---------- --------------- 
+38673          00:02:33   00:00:00                    fortran 
+38673.batch    00:02:33   00:00:00                    fortran 
