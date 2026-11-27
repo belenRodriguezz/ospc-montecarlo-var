@@ -43,7 +43,7 @@ def test_versions_equal():
             # Same seeds, same batches, same order -> expect identical numbers.
             # Tolerance only guards against BLAS differences across threads.
             assert np.allclose(got, ref, rtol=1e-12, atol=0), (name, workers, got, ref)
-        print(f"OK versions equal: serial/threads/pool/blas with 1,2,4 workers -> "
+    print(f"OK versions equal: serial/threads/pool/blas with 1,2,4 workers -> "
           f"VaR={ref[0]:,.2f} ES={ref[1]:,.2f}")
 
 
