@@ -1,0 +1,51 @@
+node=fortran job=38674 cpus=64 N=100000000 assets=50
+89.44 77.29 68.26 84/5803 1703976
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=7.30s  quantile=0.27s  total=7.59s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=3.88s  quantile=0.26s  total=4.16s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=2.45s  quantile=0.25s  total=2.72s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=8.20s  quantile=0.27s  total=8.47s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=4.42s  quantile=0.29s  total=4.72s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=2.83s  quantile=0.25s  total=3.08s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=8.22s  quantile=0.25s  total=8.47s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=4.72s  quantile=0.24s  total=4.96s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=3.23s  quantile=0.22s  total=3.46s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=7.36s  quantile=0.28s  total=7.65s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=3.88s  quantile=0.26s  total=4.16s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=2.44s  quantile=0.23s  total=2.70s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=8.10s  quantile=0.28s  total=8.38s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=4.47s  quantile=0.26s  total=4.75s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.15s  quantile=0.25s  total=3.40s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=8.32s  quantile=0.26s  total=8.58s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=4.56s  quantile=0.23s  total=4.79s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=3.12s  quantile=0.23s  total=3.36s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=7.38s  quantile=0.29s  total=7.69s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=3.89s  quantile=0.26s  total=4.17s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=2.42s  quantile=0.23s  total=2.68s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=8.14s  quantile=0.28s  total=8.42s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=4.56s  quantile=0.29s  total=4.86s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=3.00s  quantile=0.23s  total=3.24s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=8.21s  quantile=0.26s  total=8.47s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=4.65s  quantile=0.24s  total=4.90s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=3.25s  quantile=0.21s  total=3.47s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=7.33s  quantile=0.28s  total=7.63s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=3.91s  quantile=0.26s  total=4.19s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=2.39s  quantile=0.24s  total=2.65s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=8.09s  quantile=0.30s  total=8.40s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=4.56s  quantile=0.26s  total=4.84s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=2.91s  quantile=0.25s  total=3.16s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=8.25s  quantile=0.25s  total=8.51s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=4.64s  quantile=0.24s  total=4.88s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=3.11s  quantile=0.20s  total=3.32s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=7.32s  quantile=0.28s  total=7.62s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=3.87s  quantile=0.24s  total=4.14s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,333.39  ES=31,336.77  sim=2.39s  quantile=0.25s  total=2.66s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=8.17s  quantile=0.27s  total=8.45s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=4.43s  quantile=0.26s  total=4.70s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,343.00  ES=31,346.28  sim=2.88s  quantile=0.22s  total=3.11s
+threads  workers=8   n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=8.25s  quantile=0.25s  total=8.50s
+threads  workers=16  n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=4.49s  quantile=0.23s  total=4.72s
+threads  workers=32  n=100,000,000 assets=50 (synthetic)  VaR=27,333.31  ES=31,343.79  sim=3.08s  quantile=0.21s  total=3.30s
+JobID           Elapsed   TotalCPU     MaxRSS        NodeList 
+------------ ---------- ---------- ---------- --------------- 
+38674          00:04:05   00:00:00                    fortran 
+38674.batch    00:04:05   00:00:00                    fortran 
