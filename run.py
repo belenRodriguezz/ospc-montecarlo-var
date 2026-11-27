@@ -65,7 +65,13 @@ def run_pool(batches, mu, chol, w, workers):
         return list(ex.map(_pool_task, batches, chunksize=1))
 
 
-VERSIONS = {"serial": run_serial, "threads": run_threads, "pool": run_pool}
+def run_blas(batches, mu, chol, w, workers):
+    from threadpoolctl import threadpool_limits
+    with threadpool_limits(limits=workers, user_api="blas"):
+        return [simulate_batch(s, n, mu, chol, w) for s, n in batches]
+    
+    
+VERSIONS = {"serial": run_serial, "threads": run_threads, "pool": run_pool, "blas": run_blas}
 
 
 def main():
