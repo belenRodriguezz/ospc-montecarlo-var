@@ -12,7 +12,7 @@ import numpy as np
 
 from mcvar.common import (closed_form_normal, load_params, make_batches,
                           simulate_batch, var_es)
-from run import run_pool, run_serial, run_threads
+from run import run_blas, run_pool, run_serial, run_threads
 
 N, ASSETS, BATCH, SEED = 2_000_000, 40, 100_000, 7
 
@@ -37,13 +37,13 @@ def test_closed_form():
 
 def test_versions_equal():
     ref = var_es(losses_of(run_serial, 1))
-    for name, fn in [("threads", run_threads), ("pool", run_pool)]:
+    for name, fn in [("threads", run_threads), ("pool", run_pool), ("blas", run_blas)]:
         for workers in (1, 2, 4):
             got = var_es(losses_of(fn, workers))
             # Same seeds, same batches, same order -> expect identical numbers.
             # Tolerance only guards against BLAS differences across threads.
             assert np.allclose(got, ref, rtol=1e-12, atol=0), (name, workers, got, ref)
-    print(f"OK versions equal: serial/threads/pool with 1,2,4 workers -> "
+        print(f"OK versions equal: serial/threads/pool/blas with 1,2,4 workers -> "
           f"VaR={ref[0]:,.2f} ES={ref[1]:,.2f}")
 
 
